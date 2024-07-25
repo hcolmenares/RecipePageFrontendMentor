@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --primary: #fff1f5;
+  --dark-primary: #7c344a;
+  --secondary: #9c5030;
+  --terciary: #eae4d8;
+  --dark-terciary: #ded9d1;
+  --contrast: #5c5245;
+  --dark-contrast: #2e2a26;
+  --white: #ffffff;
+
+  --mobile: 412px;
+  --desktop: 1440px;
+}
+
+*,
+*::after,
+*::before {
+  font-weight: 400;
+  box-sizing: border-box;
+  color: var(--dark-contrast);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  height: 260vh; /* Altura predeterminada para dispositivos móviles */
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: var(--terciary);
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+@media screen and (min-width: 413px) {
+  body {
+    height: 220vh; /* Para pantallas entre 413px y 700px */
+  }
+}
+
+@media screen and (min-width: 701px) {
+  body {
+    height: 230vh; /* Para pantallas entre 701px y 900px */
+  }
+}
+
+@media screen and (min-width: 901px) {
+  body {
+    height: 260vh; /* Para pantallas entre 901px y 1200px */
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    height: 320vh; /* Para pantallas mayores de 1200px */
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p,
+a,
+ul,
+ol,
+li,
+h1,
+h2,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  width: 100%;
+  text-align: start;
+  font-family: "Young Serif", serif;
+}
+
+h2 {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  padding: 1rem;
+  justify-content: flex-start;
+  border-bottom: 0.1rem solid var(--terciary);
+}
+
+@media (max-width: 412px) {
+  section {
+    width: 85%;
+  }
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+ul,
+ol {
+  width: 100%;
+  padding-left: 1rem;
+  gap: 1rem;
+  list-style-position: inside;
+  /* list-style-type: none; */
+}
+
+ul span,
+ol span {
+  padding-left: 2rem;
+}
+
+li,
+li span,
+p {
+  color: var(--contrast);
+}
+
+.row,
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.accent {
+  font-weight: 700;
+}
+
+.recipe {
+  width: 60%;
+  max-width: 72rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: var(--white);
+}
+
+@media (max-width: 900px) {
+  .recipe {
+    width: 80%;
+  }
+}
+
+@media (max-width: 412px) {
+  .recipe {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
+.info,
+.preparation,
+.ingredients,
+.instructions,
+.nutrition {
+  padding: 3rem 2rem;
+}
+
+@media (max-width: 412px) {
+  .info,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    padding: 3rem 0;
+  }
+}
+
+.info {
+  gap: 2rem;
+}
+
+@media (max-width: 412px) {
+  .info {
+    padding: 0;
+  }
+}
+
+.info-img {
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+@media (max-width: 412px) {
+  .info-img {
+    border-radius: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 412px) {
+  .info-content {
+    padding: 0 2rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.info-description {
+  margin-top: 1rem;
+}
+
+.preparation {
+  border-radius: 1rem;
+  border-bottom: none;
+  background: var(--primary);
+}
+
+.preparation-title {
+  color: var(--dark-primary);
+}
+
+.preparation-list,
+.ingredients-list,
+.instructions-list,
+.nutrition-list {
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.preparation-list_item::marker {
+  color: var(--dark-primary);
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+  gap: 2rem;
+}
+
+.instructions-list {
+  list-style-type: none;
+}
+
+.instructions-list div {
+  padding-left: 2rem;
+}
+
+.instructions-list .accent {
+  padding: 0;
+}
+
+.instructions-list_item {
+  position: relative;
+  counter-increment: step-counter;
+}
+
+.instructions-list_item::before {
+  position: absolute;
+  content: counter(step-counter);
+}
+
+.nutrition-list {
+  list-style-type: none;
+}
+
+/* ToDo: usar columnas mejor */
+.nutrition-list_item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem 2rem;
+  gap: 1rem;
+  justify-content: flex-start;
+  border-bottom: 0.1rem solid var(--terciary);
+}
+
+.nutrition-list_item:last-child {
+  border-bottom: none;
+}
+
+.nutrition-list_item .accent {
+  color: var(--dark-primary);
+}
