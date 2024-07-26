@@ -1,146 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Recipe page</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Recipe page</title>
+  </head>
 
-<body class="row">
-  <div class="recipe column">
-    <main class="info column">
-      <div class="info-img">
-        <img src="assets/images/image-omelette.jpeg" alt="recipe_image">
-      </div>
+  <body>
+    <main class="container">
+      <article class="recipe column">
+        <img src="assets/images/image-omelette.jpeg" alt="recipe_image" />
 
-      <div class="info-content">
-        <h1 class="info-title">
-          Simple Omelette Recipe
-        </h1>
-  
-        <p class="info-description">
-          An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-          to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-        </p>
-      </div>
+        <div class="recipe-content">
+          <section class="info column">
+            <div class="info-content">
+              <h1 class="info-title">Simple Omelette Recipe</h1>
+
+              <p class="info-description">
+                An easy and quick dish, perfect for any meal. This classic
+                omelette combines beaten eggs cooked to perfection, optionally
+                filled with your choice of cheese, vegetables, or meats.
+              </p>
+            </div>
+          </section>
+
+          <section class="preparation column">
+            <h2 class="preparation-title">Preparation time</h2>
+            <ul class="preparation-list column">
+              <li class="preparation-list_item">
+                <span class="accent">Total: </span>Approximately 10 minutes
+              </li>
+
+              <li class="preparation-list_item">
+                <span class="accent">Preparation: </span>5 minutes
+              </li>
+
+              <li class="preparation-list_item">
+                <span class="accent">Cooking: </span>5 minutes
+              </li>
+            </ul>
+          </section>
+
+          <section class="ingredients column">
+            <h2 class="ingredients-title">Ingredients</h2>
+
+            <ul class="ingredients-list column">
+              <li class="ingredients-list_item">
+                <span>2-3 large eggs</span>
+              </li>
+
+              <li class="ingredients-list_item">
+                <span>Salt, to taste</span>
+              </li>
+
+              <li class="ingredients-list_item">
+                <span>Pepper, to taste</span>
+              </li>
+
+              <li class="ingredients-list_item">
+                <span>1 tablespoon of butter or oil</span>
+              </li>
+
+              <li class="ingredients-list_item">
+                <span
+                  >Optional fillings: cheese, diced vegetables, cooked meats,
+                  herbs</span
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section class="instructions column">
+            <h2 class="title">Instructions</h2>
+            <ol class="instructions-list column">
+              <li class="instructions-list_item">
+                <div>
+                  <span class="accent">Beat the eggs: </span>
+                  In a bowl, beat the eggs with a pinch of salt and pepper until
+                  they are well mixed. You can add a tablespoon of water or milk
+                  for a fluffier texture.
+                </div>
+              </li>
+
+              <li class="instructions-list_item">
+                <div>
+                  <span class="accent">Heat the pan: </span>
+                  Place a non-stick frying pan over medium heat and add butter
+                  or oil.
+                </div>
+              </li>
+
+              <li class="instructions-list_item">
+                <div>
+                  <span class="accent">Cook the omelette: </span>
+                  Once the butter is melted and bubbling, pour in the eggs. Tilt
+                  the pan to ensure the eggs evenly coat the surface.
+                </div>
+              </li>
+
+              <li class="instructions-list_item">
+                <div>
+                  <span class="accent">Add fillings (optional): </span>
+                  When the eggs begin to set at the edges but are still slightly
+                  runny in the middle, sprinkle your chosen fillings over one
+                  half of the omelette.
+                </div>
+              </li>
+
+              <li class="instructions-list_item">
+                <div>
+                  <span class="accent">Fold and serve: </span>
+                  As the omelette continues to cook, carefully lift one edge and
+                  fold it over the fillings. Let it cook for another minute,
+                  then slide it onto a plate.
+                </div>
+              </li>
+
+              <li class="instructions-list_item">
+                <div>
+                  <span class="accent">Enjoy: </span>
+                  Serve hot, with additional salt and pepper if needed.
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="nutrition column">
+            <h2 class="nutrition-title">Nutrition</h2>
+            <p class="nutrition-description">
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </p>
+            <ul class="nutrition-list column">
+              <li class="nutrition-list_item">
+                Calories <span class="accent">277kcal</span>
+              </li>
+              <li class="nutrition-list_item">
+                Carbs <span class="accent">0g</span>
+              </li>
+              <li class="nutrition-list_item">
+                Protein <span class="accent">20g</span>
+              </li>
+              <li class="nutrition-list_item">
+                Fat<span class="accent">22g</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </article>
     </main>
-
-    <section class="preparation column">
-      <h2 class="preparation-title">Preparation time</h2>
-      <ul class="preparation-list column">
-        <li class="preparation-list_item">
-          <span class="accent">Total: </span>Approximately 10 minutes
-        </li>
-
-        <li class="preparation-list_item">
-          <span class="accent">Preparation: </span>5 minutes
-        </li>
-
-        <li class="preparation-list_item">
-          <span class="accent">Cooking: </span>5 minutes
-        </li>
-      </ul>
-    </section>
-
-    <section class="ingredients column">
-      <h2 class="ingredients-title">Ingredients</h2>
-
-      <ul class="ingredients-list column">
-        <li class="ingredients-list_item">
-          <span>2-3 large eggs</span>
-        </li>
-
-        <li class="ingredients-list_item">
-          <span>Salt, to taste</span>
-        </li>
-
-        <li class="ingredients-list_item">
-          <span>Pepper, to taste</span>
-        </li>
-
-        <li class="ingredients-list_item">
-          <span>1 tablespoon of butter or oil</span>
-        </li>
-        
-        <li class="ingredients-list_item">
-          <span>Optional fillings: cheese, diced vegetables, cooked meats, herbs</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="instructions column">
-      <h2 class="title">Instructions</h2>
-      <ol class="instructions-list column">
-        <li class="instructions-list_item">
-          <div>
-            <span class="accent">Beat the eggs: </span>
-            In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-            You can add a tablespoon of water or milk for a fluffier texture.
-          </div>
-        </li>
-
-        <li class="instructions-list_item">
-          <div>
-            <span class="accent">Heat the pan: </span>
-            Place a non-stick frying pan over medium heat and add butter or oil.
-          </div>
-        </li>
-
-        <li class="instructions-list_item">
-          <div>
-            <span class="accent">Cook the omelette: </span>
-            Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-            the eggs evenly coat the surface.
-          </div>
-        </li>
-
-        <li class="instructions-list_item">
-          <div>
-            <span class="accent">Add fillings (optional): </span>
-            When the eggs begin to set at the edges but are still slightly runny in the 
-            middle, sprinkle your chosen fillings over one half of the omelette.
-          </div>
-        </li>
-
-        <li class="instructions-list_item">
-          <div>
-            <span class="accent">Fold and serve: </span>
-            As the omelette continues to cook, carefully lift one edge and fold it over the 
-            fillings. Let it cook for another minute, then slide it onto a plate.
-          </div>
-        </li>
-
-        <li class="instructions-list_item">
-          <div>
-            <span class="accent">Enjoy: </span>
-            Serve hot, with additional salt and pepper if needed.
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <section class="nutrition column">
-      <h2 class="nutrition-title">Nutrition</h2>
-      <p class="nutrition-description">
-        The table below shows nutritional values per serving without the additional fillings.
-      </p>
-      <ul class="nutrition-list column">
-        <li class="nutrition-list_item">
-          Calories <span class="accent">277kcal</span>
-        </li>
-        <li class="nutrition-list_item">
-          Carbs <span class="accent">0g</span>
-        </li>
-        <li class="nutrition-list_item">
-          Protein <span class="accent">20g</span> 
-        </li>
-        <li class="nutrition-list_item">
-          Fat<span class="accent">22g</span>
-        </li>
-      </ul>
-    </section>
-  </div>
-</body>
+  </body>
 </html>

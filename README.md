@@ -2,6 +2,8 @@
 
 Hi! This is my solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). I tried to complete this challenge using only the references from the resources and my intuition to determine aspects like padding and border-radius. 
 
+**Note:** Thanks to the user @haquanq for helping me resolve the CSS responsiveness issues!
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -48,6 +50,7 @@ This time I used the "desktop-first" approch because I feel more comfortable wor
 - [w3schools](https://www.w3schools.com/) - This helped me to consult some CSS aspects that I forgot while making the challenge.
 - [htmlcolors](https://htmlcolors.com/hsl-to-hex) - This is an online tool that helped me to convert HSL to hex.
 - [stack overflow](https://stackoverflow.com/) - I get stuck with the ol text align so I have to make some consults.
+- [Bui Quang Ha](https://github.com/haquanq) - To help me resolve the CSS responsiveness issues!
 
 ## Author
 
